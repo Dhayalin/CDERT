@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "project": "Crowd Disaster & Emergency Resource Tracker (CDERT)",
+    "purpose": "Synthetic demonstration data for development and testing only",
+    "generated_at": "2026-10-09T12:00:00Z",
+    "warning": "All people, incidents, counts, and resource levels are fictional. Do not use for real emergency decisions."
+  },
+  "zones": [
+    {
+      "zone_id": "Z001",
+      "name": "North Gathering Ground",
+      "latitude": 25.4358,
+      "longitude": 81.8463,
+      "crowd_density_percent": 42,
+      "risk_level": "LOW",
+      "status": "OPEN",
+      "last_updated": "2026-10-09T11:55:00Z"
+    },
+    {
+      "zone_id": "Z002",
+      "name": "Central Procession Corridor",
+      "latitude": 25.4365,
+      "longitude": 81.8481,
+      "crowd_density_percent": 78,
+      "risk_level": "HIGH",
+      "status": "CONTROLLED_ENTRY",
+      "last_updated": "2026-10-09T11:58:00Z"
+    },
+    {
+      "zone_id": "Z003",
+      "name": "Riverside Access Gate",
+      "latitude": 25.4342,
+      "longitude": 81.8502,
+      "crowd_density_percent": 91,
+      "risk_level": "CRITICAL",
+      "status": "RESTRICTED",
+      "last_updated": "2026-10-09T11:59:00Z"
+    },
+    {
+      "zone_id": "Z004",
+      "name": "South Rest Area",
+      "latitude": 25.4329,
+      "longitude": 81.8451,
+      "crowd_density_percent": 25,
+      "risk_level": "LOW",
+      "status": "OPEN",
+      "last_updated": "2026-10-09T11:50:00Z"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_id": "F001",
+      "name": "Medical Camp A",
+      "type": "MEDICAL",
+      "latitude": 25.4351,
+      "longitude": 81.8448,
+      "available_capacity": 18,
+      "total_capacity": 30,
+      "status": "OPEN",
+      "last_updated": "2026-10-09T11:57:00Z"
+    },
+    {
+      "facility_id": "F002",
+      "name": "Emergency Shelter B",
+      "type": "SHELTER",
+      "latitude": 25.4334,
+      "longitude": 81.8467,
+      "available_capacity": 120,
+      "total_capacity": 200,
+      "status": "OPEN",
+      "last_updated": "2026-10-09T11:52:00Z"
+    },
+    {
+      "facility_id": "F003",
+      "name": "First Aid Point C",
+      "type": "FIRST_AID",
+      "latitude": 25.436,
+      "longitude": 81.849,
+      "available_capacity": 0,
+      "total_capacity": 15,
+      "status": "FULL",
+      "last_updated": "2026-10-09T11:56:00Z"
+    }
+  ],
+  "resources": [
+    {
+      "resource_id": "R001",
+      "facility_id": "F001",
+      "resource_type": "FIRST_AID_KIT",
+      "quantity_available": 24,
+      "unit": "kits",
+      "last_updated": "2026-10-09T11:57:00Z"
+    },
+    {
+      "resource_id": "R002",
+      "facility_id": "F001",
+      "resource_type": "WHEELCHAIR",
+      "quantity_available": 3,
+      "unit": "units",
+      "last_updated": "2026-10-09T11:57:00Z"
+    },
+    {
+      "resource_id": "R003",
+      "facility_id": "F002",
+      "resource_type": "DRINKING_WATER",
+      "quantity_available": 450,
+      "unit": "litres",
+      "last_updated": "2026-10-09T11:52:00Z"
+    },
+    {
+      "resource_id": "R004",
+      "facility_id": "F003",
+      "resource_type": "FIRST_AID_KIT",
+      "quantity_available": 0,
+      "unit": "kits",
+      "last_updated": "2026-10-09T11:56:00Z"
+    }
+  ],
+  "incidents": [
+    {
+      "incident_id": "I001",
+      "type": "CROWDING",
+      "severity": "HIGH",
+      "zone_id": "Z002",
+      "description": "Crowd density above the configured warning threshold.",
+      "status": "OPEN",
+      "reported_by": "VOL-014",
+      "latitude": 25.4365,
+      "longitude": 81.8481,
+      "reported_at": "2026-10-09T11:58:00Z",
+      "last_updated": "2026-10-09T11:58:00Z",
+      "sync_status": "SYNCED"
+    },
+    {
+      "incident_id": "I002",
+      "type": "MEDICAL_ASSISTANCE",
+      "severity": "MEDIUM",
+      "zone_id": "Z001",
+      "description": "Fictional request for medical assistance; response team assigned.",
+      "status": "IN_PROGRESS",
+      "reported_by": "VOL-008",
+      "latitude": 25.4358,
+      "longitude": 81.8463,
+      "reported_at": "2026-10-09T11:54:00Z",
+      "last_updated": "2026-10-09T11:59:00Z",
+      "sync_status": "PENDING"
+    },
+    {
+      "incident_id": "I003",
+      "type": "MISSING_PERSON",
+      "severity": "MEDIUM",
+      "zone_id": "Z004",
+      "description": "Synthetic test report; verify role permissions before exposing personal details.",
+      "status": "RESOLVED",
+      "reported_by": "VOL-021",
+      "latitude": 25.4329,
+      "longitude": 81.8451,
+      "reported_at": "2026-10-09T10:40:00Z",
+      "last_updated": "2026-10-09T11:10:00Z",
+      "sync_status": "SYNCED"
+    }
+  ],
+  "users": [
+    {
+      "user_id": "USR-001",
+      "display_name": "Demo Visitor",
+      "role": "VISITOR",
+      "active": true
+    },
+    {
+      "user_id": "VOL-008",
+      "display_name": "Demo Volunteer 08",
+      "role": "VOLUNTEER",
+      "active": true
+    },
+    {
+      "user_id": "MED-003",
+      "display_name": "Demo Medical Officer",
+      "role": "MEDICAL_TEAM",
+      "active": true
+    },
+    {
+      "user_id": "ADM-001",
+      "display_name": "Demo Administrator",
+      "role": "ADMIN",
+      "active": true
+    },
+    {
+      "user_id": "VOL-099",
+      "display_name": "Disabled Demo Volunteer",
+      "role": "VOLUNTEER",
+      "active": false
+    }
+  ],
+  "connectivity": {
+    "device_id": "EDGE-DEMO-01",
+    "mode": "OFFLINE",
+    "last_successful_sync": "2026-10-09T11:45:00Z",
+    "pending_updates": 1
+  }
+}
