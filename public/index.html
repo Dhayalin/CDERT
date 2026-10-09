@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CDERT – Crowd Disaster & Emergency Resource Tracker</title>
+<meta name="theme-color" content="#E6E0F9">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">🛟</div>
+    <div><h1>CDERT</h1><p>Crowd Disaster &amp; Emergency Resource Tracker · Kumbh Mela</p></div>
+  </div>
+  <div class="who">
+    <div class="seg" id="roleBar" role="group" aria-label="Quick sign in"></div>
+    <select id="userSel" aria-label="Sign in as another user"></select>
+  </div>
+  <div class="net" id="net"></div>
+</header>
+<div class="rolebar" id="roleDesc"></div>
+<div class="banner" id="banner"></div>
+<main class="grid">
+  <section class="card mapcard" aria-label="Live crowd map">
+    <div class="maptools" id="maptools"></div>
+    <div class="mapwrap">
+      <svg id="map" viewBox="0 0 900 560" role="img" aria-label="Schematic map of the mela grounds with crowd-risk zones, facilities, incidents and responders"></svg>
+      <div class="pickbar" id="pickbar"></div>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="strip" id="strip"></div>
+  </section>
+  <aside class="card panel" aria-label="Control panel">
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div id="body"></div>
+  </aside>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/engine.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

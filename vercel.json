@@ -1,0 +1,8 @@
+{
+  "framework": null,
+  "outputDirectory": "public",
+  "functions": { "api/[...path].js": { "maxDuration": 10, "includeFiles": "{lib,public}/*.js" } },
+  "headers": [
+    { "source": "/sw.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }
+  ]
+}
